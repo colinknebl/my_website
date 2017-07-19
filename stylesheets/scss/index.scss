@@ -1,0 +1,144 @@
+$blue: rgb(29, 161, 242);
+$text: #555555;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	font: 20px;
+}
+
+.section {
+	background: white;
+	position: relative;
+	z-index: 1;
+}
+
+.btn {
+	border: 2px solid white;
+	color: white;
+	padding: 1rem 3rem 1rem 3rem;
+	cursor: pointer;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	color: $text;
+}
+
+.link {
+	color: $text;
+	text-decoration: none;
+}
+
+.inline-list {
+	display: inline;
+}
+
+.welcome-img {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+header {
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	img {
+		border: 2px solid red;
+		position: fixed;
+		z-index: 0;
+		height: 100vh;
+		width: auto;
+	}
+	nav {
+		background: rgba(255, 255, 255, 0.7);
+		display: block;
+		ul {
+			padding: 1rem;
+			text-align: center;
+			li {
+				display: inline;
+				margin: 0 1rem;
+				cursor: pointer;
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+	}
+}
+
+#home {
+	position: relative;
+	z-index: 1;
+	box-sizing: border-box;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		font-size: 5rem;
+	}
+	h3 {
+		font-size: 2.5rem;
+	}
+	h4 {
+		margin: 2rem .5rem;
+	}
+	ul {
+		display: block;
+		margin: 2rem .5rem;
+		li {
+			margin: auto 2rem;
+			border-radius: 50%;
+			display: inline;
+			font-size: 1.5rem;
+			position: relative;
+			cursor: pointer;
+			.fa:before {
+				border: 1px solid white;
+				border-radius: 50%;
+				padding: 1.25rem;
+				margin-left: -2rem;
+				color: white;
+			}
+		}
+	}
+	#more-btn-link {
+		margin: 2rem;
+		#more-btn {
+			background: rgba(85, 85, 85, 0.5);
+			&:hover {
+				background: rgba(29, 161, 242, 0.5);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

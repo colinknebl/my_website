@@ -1,0 +1,58 @@
+#education {
+	background: $bg1;
+	#edu-exp {
+		width: 50%;
+		margin: 0 .5rem 1rem .5rem;
+	}
+	#sub-lang-container {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	.school {
+		box-sizing: border-box;
+		width: 33.3%;
+		padding: .5rem 1.5rem .5rem 1.5rem;
+	}
+	.school-name {
+		text-align: left;
+		padding: 0;
+	}
+	h6 {
+		color: $blue;
+		font-weight: bold;
+	}
+	time {
+		font-weight: bolder;
+	}
+}
+
+// Tablet
+@media only screen and (max-width: 1030px) {
+
+	#education {
+		#edu-exp {
+			width: 80%;
+			margin: 1rem;
+		}
+		#sub-lang-container {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.school {
+			box-sizing: border-box;
+			width: 100%;
+			padding: 1rem;
+		}
+	}
+	
+}
+
+// Phone
+@media only screen and (max-width: 700px) {
+
+}

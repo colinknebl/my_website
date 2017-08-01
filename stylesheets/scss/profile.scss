@@ -1,0 +1,46 @@
+#profile {
+	background: $bg1;
+	#profile-sub-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	img {
+		border: 6px double black;
+		display: inline-block;
+	}
+	aside {
+		p {
+			margin: 1rem;
+		}
+	}
+}
+
+// Tablet
+@media only screen and (max-width: 1030px) {
+
+	#profile {
+		#profile-sub-container {
+			flex-direction: column;
+			align-items: center;
+		}
+		img {
+			border: 6px double black;
+			height: 200px;
+			width: 200px;
+		}
+		aside {
+			margin-top: 1rem;
+			p {
+				margin: 1rem;
+			}
+		}
+	}
+	
+}
+
+// Phone
+@media only screen and (max-width: 700px) {
+
+}

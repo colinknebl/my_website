@@ -1,0 +1,42 @@
+
+// image slider animation
+@keyframes fadeOut {
+	from { opacity: 1; }
+	to   { opacity: 0; }
+}
+
+.fadeOut {
+	animation: fadeOut 1s;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+.fadeIn {
+	animation: fadeIn 1s;
+}
+
+
+// social icon animations
+.spin {
+	animation: spin 1s;
+}
+
+.spin-back {
+	animation: spin-back 1s;
+	&:before {
+		color: white;
+	}
+}
+
+@keyframes spin {
+	from { transform: rotate(0deg)}
+	to   { transform: rotate(360deg)}
+}
+
+@keyframes spin-back {
+	from { transform: rotate(0deg)}
+	to   { transform: rotate(-360deg)}
+}

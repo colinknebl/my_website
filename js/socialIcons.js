@@ -1,12 +1,5 @@
 
-
-
-
-
-
-console.log( $('.circle').children());
-
-function eventListeners() {
+function eventListenersSocial() {
 
 	$('.circle').on({
 		mouseenter: function(event){ spin.enter( $(event.target) ) },
@@ -62,4 +55,4 @@ var spin = {
 };
 
 
-$(document).ready( eventListeners() );
+$(document).ready( eventListenersSocial() );

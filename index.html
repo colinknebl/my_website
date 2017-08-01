@@ -8,22 +8,42 @@
 	<meta name="keywords" content="">
 	<title>Colin Knebl</title>
 	<!-- STYLESHEETS -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/css/index.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
 	<header>
-		<img class="welcome-img" src="./assets/images/road.jpg">
-		<nav>
-			<ul>
+		<i id="menu-bars" class="fa fa-bars" aria-hidden="true"></i>
+		<div id="img-slider">
+			<img class="welcome-img active" src="./assets/images/road.jpg">
+			<img class="welcome-img hide" src="./assets/images/lights.jpg">
+			<img class="welcome-img hide" src="./assets/images/create.jpg">
+		</div>
+		<nav id="nav" class="mb-inactive">
+			<!-- <script>
+				var nav = document.getElementById('nav');
+
+				console.log(nav);
+				console.log(window.innerWidth);
+
+				if (window.innerWidth <= 700) {
+					console.log('do this');
+
+					nav.className += 'hide';
+
+					console.log(nav);
+				}
+			</script> -->
+			<ul id="nav-list">
 				<a class="link" href="#home"><li>HOME</li></a>
 				<a class="link" href="#profile"><li>PROFILE</li></a>
 				<a class="link" href="#languages"><li>LANGUAGES</li></a>
 				<a class="link" href="#skills"><li>SKILLS</li></a>
 				<a class="link" href="#portfolio"><li>PORTFOLIO</li></a>
 				<a class="link" href="#education"><li>EDUCATION</li></a>
-				<a class="link" href="#experience"><li>EXPERIENCE</li></a>
-				<a class="link" href="#other"><li>OTHER</li></a>
 				<a class="link" href="#contact"><li>CONTACT</li></a>
 			</ul>
 		</nav>
@@ -34,14 +54,44 @@
 		<section id="home">
 			<h1>Colin Knebl</h1>
 			<h3>Front-End Web Developer</h3>
-			<h4>Favorite quote:</h4>
+			<h6><i>There's no place like 127.0.0.1</i></h6>
 			<div id="social-icons">
 				<ul class="social-list">
-					<li class="icon"><a href="#"><div class="circle"><i id="gh-icon" class="fa fa-github white-cl" aria-hidden="true"></i></div></a></li>
-					<li class="icon"><a href=""><div class="circle"><i id="li-icon" class="fa fa-linkedin-square white-cl" aria-hidden="true"></i></div></a></li>
-					<li class="icon"><a href="mailto:colin.knebl@outlook.com"><div class="circle"><i  id="em-icon" class="fa fa-envelope white-cl" aria-hidden="true"></i></div></a></li>
-					<li class="icon"><a href=""><div class="circle"><i id="fb-icon" class="fa fa-facebook-square white-cl" aria-hidden="true"></i></div></a></li>
-					<li class="icon"><a href=""><div class="circle"><i id="tw-icon" class="fa fa-twitter white-cl" aria-hidden="true"></i></div></a></li>
+					<li class="icon">
+						<a href="#">
+							<div class="circle">
+								<i id="gh-icon" class="fa fa-github white-cl" aria-hidden="true"></i>
+							</div>
+						</a>
+					</li>
+					<li class="icon">
+						<a href="">
+							<div class="circle">
+								<i id="li-icon" class="fa fa-linkedin-square white-cl" aria-hidden="true"></i>
+							</div>
+						</a>
+					</li>
+					<li class="icon">
+						<a href="mailto:colin.knebl@outlook.com">
+							<div class="circle">
+								<i id="em-icon" class="fa fa-envelope white-cl" aria-hidden="true"></i>
+							</div>
+						</a>
+					</li>
+					<li class="icon">
+						<a href="">
+							<div class="circle">
+								<i id="fb-icon" class="fa fa-facebook-square white-cl" aria-hidden="true"></i>
+							</div>
+						</a>
+					</li>
+					<li class="icon">
+						<a href="">
+							<div class="circle">
+								<i id="tw-icon" class="fa fa-twitter white-cl" aria-hidden="true"></i>
+							</div>
+						</a>
+					</li>
 				</ul>
 			</div>
 			<a id="more-btn-link" class="link" href="#profile"><div id="more-btn" class="btn">MORE</div></a>
@@ -51,11 +101,12 @@
 			<h4 class="section-intro">Always Pursuing New Chanllenges</h4>
 			<div id="profile-sub-container" class="sub-ct">
 				<img src="./assets/images/headshot.png" alt="my headshot" width="300" height="300">
-				<ul>
-					<li>insert brief work history here</li>
-					<li>test</li>
-					<li>test 2</li>
-				</ul>
+				<aside>
+					<p>Hi! Thanks for taking the time to check out my site!</p>
+					<p>I am a front-end web developer currently focusing on learning full stack development with the MEAN stack. I have a year of experience working with front-end technologies, and have worked with several clients with the design and development of static web pages.</p>
+					<p>I am looking to join a team where I can both contribute to the team as well as continue on my learning journey.</p>
+					<p>Whether you are looking for someone to join your team, or are interested in publishing a website I'd love to hear from you.</p>
+				</aside>
 			</div>
 		</section>
 		<section id="languages" class="section">
@@ -64,7 +115,7 @@
 			<h4 class="section-intro">Codely Speaking</h4>
 			<div id="languages-sub-container" class="sub-ct">
 				<ul>
-					<div>
+					<div class="lang-grp">
 						<li>
 							<img src="./assets/images/html-logo-web.png" alt="html logo" width="150" height="150">
 							<p>HTML</p>
@@ -78,7 +129,7 @@
 							<p>Sass</p>
 						</li>
 					</div>
-					<div>
+					<div class="lang-grp">
 						<li>
 							<img src="./assets/images/jquery-logo-web.png" alt=" logo" width="150" height="150">
 							<p>jQuery</p>
@@ -101,15 +152,15 @@
 			<div id="skills-sub-container" class="sub-ct">
 				<div class="skills-box">
 					<img src="./assets/images/comp-icon.png" alt="" width="225" height="225">
-					<p>insert items here</p>
+					<p>Website development, UI/UX design, Responsive Design, Testing, Debugging</p>
 				</div>
 				<div class="skills-box">
 					<img src="./assets/images/knowledge.png" alt="" width="225" height="225">
-					<p>insert items here</p>
+					<p>Google Analytics, Search Engine Optimization, Sketch, Browser Developer Tools</p>
 				</div>
 				<div class="skills-box">
 					<img src="./assets/images/tools.png" alt="" width="225" height="225">
-					<p>insert items here</p>
+					<p>Git/GitHub, Amazon Web Service (S3), Heroku, Terminal, MacOSX, Windows 10, Sublime Text</p>
 				</div>
 			</div>
 		</section>
@@ -141,26 +192,53 @@
 			</div>
 		</section>
 
-		<div id="spacer"></div>
+		
 
 		<section id="education" class="section">
 			<h2 class="section-head">EDUCATION</h2>
 			<h4 class="section-intro">Not the typical techy background, but in the works</h4>
-			<div></div>
-			<div></div>
+			<p id="edu-exp">I love learning. So much so that I decided to teach myself software development. While I do not have any formal university training in computer science, that will soon change. My focus has been on building my portfolio of work in order to get a job. Once I am satisfied with the work I have to show off, or once I get a job as a developer, I plan on enrolling in a the computer science program at either Baker College of Grand Valley State University.</p>
+			<div id="sub-lang-container" class="sub-ct">
+				<div class="school">
+					<h6 class="school-name">Viking Code School</h6>
+					<p><time datetime="2017-06-01 12:00">June 2017</time> <b>to</b> <time datetime="2017-07-31 12:00">July 2017</time></p>
+					<p>Web Development Bootcamp</p> 
+					<details>This course covered everything from Software Engineering basics to front-end development with HTML, CSS, JavaScript, jQuery, and Sass to back-end development with Node.js and Express.js.</details>
+				</div>
+				<div class="school">
+					<h6 class="school-name">Kaplan University</h6>
+					<p><time datetime="2011-03-01 12:00">March 2011</time> <b>to</b> <time datetime="2015-01-31 12:00">January 2015</time></p>
+					<p>B.S. in Health and Wellness, Emphasis in Business Administration</p>
+					<details>
+						<p>I started out in the Health and Wellness program, then switched to the Business program for about a year before switching it back to the Health and Wellness program and graduating with that degree.</p>
+						<br>
+						<p>The Health and Wellness program was focused more on creating wellness programs for corporate settings.</p>
+					</details>
+				</div>
+				<div class="school">
+					<h6 class="school-name">Community College of the Air Force</h6>
+					<p><time datetime="2010-05-30 12:00">May 2010</time> <b>to</b> <time datetime="2015-03-01 12:00">March 2015</time></p>
+					<p>A.A.S. in Logistics</p>
+					<details>5 years to complete an associates degree?! Well, as soon as you enter the Air Force you are entered into the program, whether you are actively pursuing it or not. Those dates are the date of enrollment to the date of completing.</details>
+				</div>
+			</div>
 		</section>
-		<section class="section"></section>
-		<section class="section"></section>
 	</main>
 
 
-	<footer>
-		<a href="#">Résumé</a>
-		<div class="btn">CONTACT ME</div>
+	<div id="spacer"></div>
+
+	<footer id="contact">
+		<a id="res-link" href="#">Résumé</a>
+		<a id="mail-link" class="btn" href="mailto:colin.knebl@outlook.com">CONTACT ME</a>
 	</footer>
 
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/scrollTo.js"></script>
+	<script type="text/javascript" src="js/socialIcons.js"></script>
+	<script type="text/javascript" src="js/appScroll.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>

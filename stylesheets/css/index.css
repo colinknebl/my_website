@@ -1,3 +1,6 @@
+.mb-social {
+  display: none; }
+
 #menu-bars {
   display: none;
   margin: .75rem;
@@ -26,12 +29,23 @@
     #nav-list li:hover {
       color: #1da1f2; }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1030px) {
+  .mb-social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .mb-social a {
+      text-decoration: none; }
+    .mb-social li {
+      border-bottom: 1px solid #1da1f2;
+      color: #1da1f2; }
+
   .mb-inactive {
     display: none; }
 
   #menu-bars {
-    display: inline-block; }
+    display: inline-block;
+    color: white; }
 
   #nav-list {
     position: absolute;
@@ -46,42 +60,49 @@
       margin: .5rem; }
       #nav-list li:hover {
         color: #1da1f2; } }
-.link {
-  color: #555555;
-  text-decoration: none; }
-
-.welcome-img {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh; }
-
 header {
   display: block; }
   header .active-icon {
     color: #1da1f2; }
 
-@media only screen and (max-width: 700px) {
-  header {
-    position: relative; } }
-@keyframes fadeOut {
+#img-slider {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1; }
+
+.slide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0; }
+
+.slide-active {
+  opacity: 1; }
+
+.link {
+  color: #555555;
+  text-decoration: none; }
+
+.slideFadeOut {
+  animation: slideFadeOut 2s infinite; }
+
+@keyframes slideFadeOut {
   from {
     opacity: 1; }
   to {
     opacity: 0; } }
-.fadeOut {
-  animation: fadeOut 1s; }
+.slideFadeIn {
+  animation: slideFadeIn 2s infinite; }
 
-@keyframes fadeIn {
+@keyframes slideFadeIn {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-.fadeIn {
-  animation: fadeIn 1s; }
-
 .spin {
   animation: spin 1s; }
 
@@ -101,55 +122,56 @@ header {
   to {
     transform: rotate(-360deg); } }
 #home {
-  position: relative;
-  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   height: 100vh;
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  #home h4 {
-    margin: 2rem .5rem; }
+  #home h1, #home h3, #home h6 {
+    margin: 1rem;
+    padding: 0;
+    color: white; }
+  #home #joke {
+    font-style: italic; }
   #home #more-btn-link {
-    margin: 2rem; }
+    margin: 1rem; }
     #home #more-btn-link #more-btn {
       background: rgba(85, 85, 85, 0.5); }
       #home #more-btn-link #more-btn:hover {
         background: rgba(29, 161, 242, 0.5); }
 
 #social-icons {
-  background: rgba(0, 0, 0, 0.2); }
+  margin: 0;
+  padding: 0; }
 
 .social-list {
-  margin: 2rem .5rem;
-  list-style-type: none;
+  margin: 2rem;
+  padding: 0;
   display: flex;
   flex-direction: row; }
 
 .icon {
-  margin: auto 2rem;
-  border-radius: 50%;
-  display: inline;
-  position: relative;
-  z-index: 4;
-  cursor: pointer; }
+  margin: 0;
+  padding: .5rem; }
+  .icon a {
+    margin: 0;
+    padding: 0; }
   .icon i:before {
     font-size: 2rem; }
 
 .circle {
   border: 2px solid white;
+  margin: 0;
   border-radius: 50%;
   padding: 1.25rem; }
 
-.white-cl:before {
+.white-cl {
   color: white; }
 
 @media only screen and (max-width: 1030px) {
-  .icon i:before {
-    font-size: 1.5rem; } }
-@media only screen and (max-width: 700px) {
   #home {
     position: relative;
     z-index: 1;
@@ -177,6 +199,8 @@ header {
       position: relative;
       z-index: 4;
       cursor: pointer; }
+      #home .icon i:before {
+        font-size: 1.5rem; }
 
   #social-icons,
   #more-btn-link {
@@ -200,7 +224,8 @@ header {
   color: tan; }
 
 #profile {
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  height: 768px; }
   #profile #profile-sub-container {
     display: flex;
     flex-direction: row;
@@ -208,7 +233,9 @@ header {
     align-items: center; }
   #profile img {
     border: 6px double black;
-    display: inline-block; }
+    display: inline-block;
+    width: 300px;
+    height: 300px; }
   #profile aside p {
     margin: 1rem; }
 
@@ -225,6 +252,7 @@ header {
     #profile aside p {
       margin: 1rem; } }
 #languages {
+  height: 864px;
   background: #F7F7F7; }
   #languages .lang-grp {
     width: 100%;
@@ -247,6 +275,7 @@ header {
   #languages li {
     margin: 1rem 1rem; } }
 #skills {
+  height: 795px;
   background: #FFFFFF; }
   #skills #skills-sub-container {
     display: flex;
@@ -265,6 +294,7 @@ header {
     width: 100%;
     text-align: center; } }
 #portfolio {
+  height: 758px;
   background: #F7F7F7; }
   #portfolio #portfolio-sub-container {
     display: flex;
@@ -292,6 +322,7 @@ header {
     flex-direction: column;
     align-items: center; } }
 #education {
+  min-height: 815px;
   background: #FFFFFF; }
   #education #edu-exp {
     width: 50%;
@@ -364,6 +395,7 @@ footer {
 :root {
   font-size: 16px; }
 
+a,
 p,
 details,
 li,

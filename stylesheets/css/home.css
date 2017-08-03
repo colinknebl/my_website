@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$blue".
-        on line 122 of scss/home.scss
+        on line 130 of scss/home.scss
 
-117: .purple {
-118: 	color: purple;
-119: }
-120: 
-121: .tw-blue {
-122: 	color: $blue;
-123: }
-124: 
-125: .li-blue {
-126: 	color: #0077B5
+125: .purple {
+126: 	color: purple;
 127: }
+128: 
+129: .tw-blue {
+130: 	color: $blue;
+131: }
+132: 
+133: .li-blue {
+134: 	color: #0077B5
+135: }
 
 Backtrace:
-scss/home.scss:122
+scss/home.scss:130
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -66,4 +66,4 @@ scss/home.scss:122
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 122 of scss/home.scss\A \A 117: .purple {\A 118: 	color: purple;\A 119: }\A 120: \A 121: .tw-blue {\A 122: 	color: $blue;\A 123: }\A 124: \A 125: .li-blue {\A 126: 	color: #0077B5\A 127: }"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 130 of scss/home.scss\A \A 125: .purple {\A 126: 	color: purple;\A 127: }\A 128: \A 129: .tw-blue {\A 130: 	color: $blue;\A 131: }\A 132: \A 133: .li-blue {\A 134: 	color: #0077B5\A 135: }"; }

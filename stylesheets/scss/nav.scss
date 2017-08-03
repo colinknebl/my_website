@@ -1,4 +1,7 @@
 // @media only screen and (min-width: 1031px) {
+	.mb-social {
+		display: none;
+	}
 	#menu-bars {
 		display: none;
 		margin: .75rem;
@@ -35,16 +38,25 @@
 
 // Tablet
 @media only screen and (max-width: 1030px) {
+	.mb-social {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		a{
+			text-decoration: none;
+		}
+		li {
+			border-bottom: 1px solid $blue;
+			color: $blue;
 
-}
-
-// Phone
-@media only screen and (max-width: 700px) {
+		}
+	}
 	.mb-inactive {
 		display: none;
 	}
 	#menu-bars {
 		display: inline-block;
+		color: white;
 	}
 	#nav-list {
 		// display: none;
@@ -65,6 +77,11 @@
 			}
 		}
 	}
+}
+
+// Phone
+@media only screen and (max-width: 700px) {
+
 }
 
 

@@ -1,19 +1,19 @@
-@keyframes fadeOut {
+.slideFadeOut {
+  animation: slideFadeOut 2s infinite; }
+
+@keyframes slideFadeOut {
   from {
     opacity: 1; }
   to {
     opacity: 0; } }
-.fadeOut {
-  animation: fadeOut 1s; }
+.slideFadeIn {
+  animation: slideFadeIn 2s infinite; }
 
-@keyframes fadeIn {
+@keyframes slideFadeIn {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-.fadeIn {
-  animation: fadeIn 1s; }
-
 .spin {
   animation: spin 1s; }
 

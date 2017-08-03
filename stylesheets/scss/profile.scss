@@ -1,5 +1,6 @@
 #profile {
 	background: $bg1;
+	height: 768px;
 	#profile-sub-container {
 		display: flex;
 		flex-direction: row;
@@ -9,6 +10,8 @@
 	img {
 		border: 6px double black;
 		display: inline-block;
+		width: 300px;
+		height: 300px;
 	}
 	aside {
 		p {

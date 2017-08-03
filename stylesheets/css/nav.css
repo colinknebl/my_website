@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$text".
-        on line 9 of scss/nav.scss
+        on line 12 of scss/nav.scss
 
-4: 		margin: .75rem;
-5: 		font-size: 2rem;
-6: 		position: absolute;
-7: 		z-index: 20;
-8: 		right: 0;
-9: 		color: $text;
-10: 		cursor: pointer;
-11: 	}
-12: 	#nav-list {
-13: 		background: rgba(255, 255, 255, 0.7);
-14: 		position: fixed;
+7: 		margin: .75rem;
+8: 		font-size: 2rem;
+9: 		position: absolute;
+10: 		z-index: 20;
+11: 		right: 0;
+12: 		color: $text;
+13: 		cursor: pointer;
+14: 	}
+15: 	#nav-list {
+16: 		background: rgba(255, 255, 255, 0.7);
+17: 		position: fixed;
 
 Backtrace:
-scss/nav.scss:9
+scss/nav.scss:12
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -66,4 +66,4 @@ scss/nav.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$text\".\A         on line 9 of scss/nav.scss\A \A 4: 		margin: .75rem;\A 5: 		font-size: 2rem;\A 6: 		position: absolute;\A 7: 		z-index: 20;\A 8: 		right: 0;\A 9: 		color: $text;\A 10: 		cursor: pointer;\A 11: 	}\A 12: 	#nav-list {\A 13: 		background: rgba(255, 255, 255, 0.7);\A 14: 		position: fixed;"; }
+  content: "Error: Undefined variable: \"$text\".\A         on line 12 of scss/nav.scss\A \A 7: 		margin: .75rem;\A 8: 		font-size: 2rem;\A 9: 		position: absolute;\A 10: 		z-index: 20;\A 11: 		right: 0;\A 12: 		color: $text;\A 13: 		cursor: pointer;\A 14: 	}\A 15: 	#nav-list {\A 16: 		background: rgba(255, 255, 255, 0.7);\A 17: 		position: fixed;"; }

@@ -1,42 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Colin Knebl, Front-End Web Developer">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="Colin Knebl :: Front-End Web Developer">
 	<meta name="author" content="Colin Knebl">
-	<meta name="keywords" content="">
+	<meta name="keywords" content=""> 
+	<link rel="canonical" href="http://colinknebl.com">
 	<title>Colin Knebl</title>
+	
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/css/index.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 	<!-- FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	
+	<!-- FAVICON -->
+	<link rel="icon" type="image/x-icon" sizes="32x32" href="./assets/images/favicon.ico">
+	
+	<!-- SOCIAL MEDIA CONTACT CARDS -->
+	<!-- DARN YOU TWITTER...I HARDLY EVEN USE YOU -->
+	<meta name="twitter:card" content="website">
+	<meta name="twitter:site" content="@ColinKnebl">
+	<meta name="twitter:title" content="Colin Knebl's Personal Web Page">
+	<meta name="twitter:description" content="Colin Knebl is a Front-End Web Developer who enjoys dabbling with server-side programming as well.">
+	<meta name="twitter:creator" content="@ColinKnebl">
+	<meta name="twitter:image" content="http://colinknebl.com/assets/images/comp-icon.jpg">
+	<!-- OPEN GRAPH DATA -->
+	<meta property="og:title" content="Colin Knebl">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://colinknebl.com/">
+	<meta property="og:image" content="http://colinknebl.com/assets/images/comp-icon.jpg">
+	<meta property="og:description" content="Colin Knebl is a Front-End Web Developer who enjoys dabbling with server-side programming as well.">
+	<meta property="og:lacale" content="en_US">
+	<!-- SCHEMA.ORG MARKUP FOR GOOGLE+ -->
+	<meta itemprop="name" content="colinknebl.com | Colin Knebl's Personal Web Page">
+	<meta itemprop="description" content="Colin Knebl is a Front-End Web Developer who enjoys dabbling with server-side programming as well.">
+	<meta itemprop="image" content="http://colinknebl.com/assets/images/comp-icon.jpg">
+	
+	<!-- GOOGLE VERIFICATION -->
+	<meta name="google-site-verification" content="-Hmc4uSfSiNZJen6GqdxwEtD6qPgVN0YnVxDy452wlk">
+	<!-- ANALYTICS -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-103827832-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
 </head>
 <body>
 	<header>
 		<i id="menu-bars" class="fa fa-bars" aria-hidden="true"></i>
 		<div id="img-slider">
-			<img class="welcome-img active" src="./assets/images/road.jpg">
-			<img class="welcome-img hide" src="./assets/images/lights.jpg">
-			<img class="welcome-img hide" src="./assets/images/create.jpg">
+			<img class="slide slide-active" src="./assets/images/comp-design.jpg">
+			<img class="slide" src="./assets/images/lights.jpg">
+			<img class="slide" src="./assets/images/create.jpg">
+			<img class="slide" src="./assets/images/computers.jpg">
+			<img class="slide" src="./assets/images/singapore-skyline.jpg">
 		</div>
 		<nav id="nav" class="mb-inactive">
-			<!-- <script>
-				var nav = document.getElementById('nav');
-
-				console.log(nav);
-				console.log(window.innerWidth);
-
-				if (window.innerWidth <= 700) {
-					console.log('do this');
-
-					nav.className += 'hide';
-
-					console.log(nav);
-				}
-			</script> -->
 			<ul id="nav-list">
 				<a class="link" href="#home"><li>HOME</li></a>
 				<a class="link" href="#profile"><li>PROFILE</li></a>
@@ -45,6 +74,13 @@
 				<a class="link" href="#portfolio"><li>PORTFOLIO</li></a>
 				<a class="link" href="#education"><li>EDUCATION</li></a>
 				<a class="link" href="#contact"><li>CONTACT</li></a>
+				<ul class="mb-social">
+					<a href="https://github.com/colinknebl"><li>github</li></a>
+					<a href="https://www.linkedin.com/in/colin-knebl-39480357/"><li>linkedin</li></a>
+					<a href="mailto:colin.knebl@outlook.com"><li>email</li></a>
+					<a href="https://www.facebook.com/colin.knebl"><li>facebook</li></a>
+					<a href="https://twitter.com/ColinKnebl"><li>twitter</li></a>
+				</ul>
 			</ul>
 		</nav>
 	</header>
@@ -54,18 +90,18 @@
 		<section id="home">
 			<h1>Colin Knebl</h1>
 			<h3>Front-End Web Developer</h3>
-			<h6><i>There's no place like 127.0.0.1</i></h6>
+			<h6 id="joke">There's no place like 127.0.0.1</h6>
 			<div id="social-icons">
 				<ul class="social-list">
 					<li class="icon">
-						<a href="#">
+						<a href="https://github.com/colinknebl">
 							<div class="circle">
 								<i id="gh-icon" class="fa fa-github white-cl" aria-hidden="true"></i>
 							</div>
 						</a>
 					</li>
 					<li class="icon">
-						<a href="">
+						<a href="https://www.linkedin.com/in/colin-knebl-39480357/">
 							<div class="circle">
 								<i id="li-icon" class="fa fa-linkedin-square white-cl" aria-hidden="true"></i>
 							</div>
@@ -79,14 +115,14 @@
 						</a>
 					</li>
 					<li class="icon">
-						<a href="">
+						<a href="https://www.facebook.com/colin.knebl">
 							<div class="circle">
 								<i id="fb-icon" class="fa fa-facebook-square white-cl" aria-hidden="true"></i>
 							</div>
 						</a>
 					</li>
 					<li class="icon">
-						<a href="">
+						<a href="https://twitter.com/ColinKnebl">
 							<div class="circle">
 								<i id="tw-icon" class="fa fa-twitter white-cl" aria-hidden="true"></i>
 							</div>
@@ -98,7 +134,7 @@
 		</section>
 		<section id="profile" class="section">
 			<h2 class="section-head">PROFILE</h2>
-			<h4 class="section-intro">Always Pursuing New Chanllenges</h4>
+			<h4 class="section-intro">Always Pursuing New Challenges</h4>
 			<div id="profile-sub-container" class="sub-ct">
 				<img src="./assets/images/headshot.png" alt="my headshot" width="300" height="300">
 				<aside>
@@ -229,7 +265,7 @@
 	<div id="spacer"></div>
 
 	<footer id="contact">
-		<a id="res-link" href="#">Résumé</a>
+		<a id="res-link" href="" download="Colin's Resume">Résumé</a>
 		<a id="mail-link" class="btn" href="mailto:colin.knebl@outlook.com">CONTACT ME</a>
 	</footer>
 
@@ -240,5 +276,6 @@
 	<script type="text/javascript" src="js/appScroll.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
 	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/navScrollHighlighter.js"></script>
 </body>
 </html>

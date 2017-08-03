@@ -1,15 +1,4 @@
-.link {
-	color: $text;
-	text-decoration: none;
-}
-.welcome-img {
-	position: fixed;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-}
+
 header {
 	display: block;
 	.active-icon {
@@ -17,6 +6,29 @@ header {
 	}
 }
 
+#img-slider {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+.slide {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
+}
+.slide-active {
+	opacity: 1;
+}
+
+.link {
+	color: $text;
+	text-decoration: none;
+}
 // Tablet
 @media only screen and (max-width: 1030px) {
 
@@ -24,9 +36,5 @@ header {
 
 // Phone
 @media only screen and (max-width: 700px) {
-
-	header {
-		position: relative;
-	}
 
 }

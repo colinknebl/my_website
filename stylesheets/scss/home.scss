@@ -1,18 +1,22 @@
 #home {
-	position: relative;
-	z-index: 1;
+	background: rgba(0,0,0,0.5);
 	box-sizing: border-box;
 	height: 100vh;
-	width: 100%;
+	width: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	h4 {
-		margin: 2rem .5rem;
+	h1, h3, h6 {
+		margin: 1rem;
+		padding: 0;
+		color: white;
+	}
+	#joke {
+		font-style: italic;
 	}
 	#more-btn-link {
-		margin: 2rem;
+		margin: 1rem;
 		#more-btn {
 			background: rgba(85, 85, 85, 0.5);
 			&:hover {
@@ -23,23 +27,25 @@
 }
 
 #social-icons {
-	background: rgba(0,0,0,0.2);
+	// background: rgba(0,0,0,0.2);
+	margin: 0;
+	padding: 0;
 }
 
 .social-list {
-	margin: 2rem .5rem;
-	list-style-type: none;
+	margin: 2rem;
+	padding: 0;
 	display: flex;
 	flex-direction: row;
 }
 
 .icon {
-	margin: auto 2rem;
-	border-radius: 50%;
-	display: inline;
-	position: relative;
-	z-index: 4;
-	cursor: pointer;
+	margin: 0;
+	padding: .5rem;
+	a {
+		margin: 0;
+		padding: 0;
+	}
 	i:before {
 		font-size: 2rem;
 	}
@@ -47,26 +53,18 @@
 
 .circle {
 	border: 2px solid white;
+	margin: 0;	
 	border-radius: 50%;
 	padding: 1.25rem;
 }
 
-.white-cl:before {
+.white-cl {
 	color: white;
 }
 
 // Tablet
 @media only screen and (max-width: 1030px) {
 	
-	.icon i:before {
-		font-size: 1.5rem;
-	}
-	
-}
-
-// Phone
-@media only screen and (max-width: 700px) {
-
 	#home {
 		position: relative;
 		z-index: 1;
@@ -100,6 +98,9 @@
 			position: relative;
 			z-index: 4;
 			cursor: pointer;
+			i:before {
+				font-size: 1.5rem;
+			}
 		}
 	}
 
@@ -107,6 +108,13 @@
 	#more-btn-link {
 		display: none;
 	}
+
+}
+
+// Phone
+@media only screen and (max-width: 700px) {
+
+
 
 }
 

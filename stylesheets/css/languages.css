@@ -1,17 +1,18 @@
 /*
 Error: Undefined variable: "$bg2".
-        on line 2 of scss/languages.scss
+        on line 3 of scss/languages.scss
 
 1: #languages {
-2: 	background: $bg2;
-3: 	.lang-grp {
-4: 		width: 100%;
-5: 		display: flex;
-6: 		flex-direction: row;
-7: 		justify-content: space-around;
+2: 	height: 864px;
+3: 	background: $bg2;
+4: 	.lang-grp {
+5: 		width: 100%;
+6: 		display: flex;
+7: 		flex-direction: row;
+8: 		justify-content: space-around;
 
 Backtrace:
-scss/languages.scss:2
+scss/languages.scss:3
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -62,4 +63,4 @@ scss/languages.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$bg2\".\A         on line 2 of scss/languages.scss\A \A 1: #languages {\A 2: 	background: $bg2;\A 3: 	.lang-grp {\A 4: 		width: 100%;\A 5: 		display: flex;\A 6: 		flex-direction: row;\A 7: 		justify-content: space-around;"; }
+  content: "Error: Undefined variable: \"$bg2\".\A         on line 3 of scss/languages.scss\A \A 1: #languages {\A 2: 	height: 864px;\A 3: 	background: $bg2;\A 4: 	.lang-grp {\A 5: 		width: 100%;\A 6: 		display: flex;\A 7: 		flex-direction: row;\A 8: 		justify-content: space-around;"; }

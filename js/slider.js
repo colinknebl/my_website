@@ -1,41 +1,23 @@
+var $slider = $('#img-slider');
+var $slides = $('.slide') ;
 
-
-function slider() {
-
-	var $activeImg =  $('#img-slider').find('.active');
-
-	var $nextImg = $('#img-slider').find('.active').next();
-
-	var $firstImg = $('#img-slider').children().eq(0);
-
-	var $children = $('#img-slider').children();
-
-	$children.each(function(){
-		$(this).removeClass('fadeOut fadeIn');
-	});
-
-
-	if ( $activeImg.next().length >= 1) {
-
- 		$activeImg.addClass('fadeOut');
- 		
- 		window.setTimeout(function(){
- 			$activeImg.toggleClass('active hide');
- 			$nextImg.toggleClass('active hide fadeIn');
- 		}, 1000);
-
-	} else {
-
-		$activeImg.addClass('fadeOut');
- 		
- 		window.setTimeout(function(){
- 			$activeImg.toggleClass('active hide');
- 			$firstImg.toggleClass('active hide fadeIn');
- 		}, 1000);
-	}
-
+function slider(){
+	var $active = $slider.find('.slide-active');
 	
+	var $next = $active.next();
+	if ($next.length === 0) {
+		$next = $slider.children().eq(0);
+	} 
+
+	$slider.find('.slide-active').removeClass('slide-active');
+	$active.addClass('slideFadeOut');
+	$next.addClass('slideFadeIn');
+
+	setTimeout(function(){
+		$active.removeClass('slide-active');
+		$next.addClass('slide-active');
+		$slider.children().removeClass('slideFadeIn slideFadeOut');
+	},2000);
 }
 
-
-$(document).ready(  window.setInterval(slider,  6000 ) );
+setInterval(slider, 10000);

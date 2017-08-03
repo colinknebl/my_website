@@ -4,11 +4,11 @@ Error: Undefined variable: "$bg1".
 
 1: #profile {
 2: 	background: $bg1;
-3: 	#profile-sub-container {
-4: 		display: flex;
-5: 		flex-direction: row;
-6: 		justify-content: center;
-7: 		align-items: center;
+3: 	height: 768px;
+4: 	#profile-sub-container {
+5: 		display: flex;
+6: 		flex-direction: row;
+7: 		justify-content: center;
 
 Backtrace:
 scss/profile.scss:2
@@ -62,4 +62,4 @@ scss/profile.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$bg1\".\A         on line 2 of scss/profile.scss\A \A 1: #profile {\A 2: 	background: $bg1;\A 3: 	#profile-sub-container {\A 4: 		display: flex;\A 5: 		flex-direction: row;\A 6: 		justify-content: center;\A 7: 		align-items: center;"; }
+  content: "Error: Undefined variable: \"$bg1\".\A         on line 2 of scss/profile.scss\A \A 1: #profile {\A 2: 	background: $bg1;\A 3: 	height: 768px;\A 4: 	#profile-sub-container {\A 5: 		display: flex;\A 6: 		flex-direction: row;\A 7: 		justify-content: center;"; }

@@ -8,7 +8,7 @@ Error: Undefined variable: "$blue".
 4: 	flex-direction: column;
 5: 	align-items: center;
 6: 	padding: 5rem .5rem;
-7: 	#res-link {
+7: 	#resume-div {
 
 Backtrace:
 scss/footer.scss:2
@@ -62,4 +62,4 @@ scss/footer.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 2 of scss/footer.scss\A \A 1: footer {\A 2: 	background: $blue;\A 3: 	display: flex;\A 4: 	flex-direction: column;\A 5: 	align-items: center;\A 6: 	padding: 5rem .5rem;\A 7: 	#res-link {"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 2 of scss/footer.scss\A \A 1: footer {\A 2: 	background: $blue;\A 3: 	display: flex;\A 4: 	flex-direction: column;\A 5: 	align-items: center;\A 6: 	padding: 5rem .5rem;\A 7: 	#resume-div {"; }

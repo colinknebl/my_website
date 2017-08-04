@@ -4,11 +4,23 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	padding: 5rem .5rem;
+	#resume-div {
+		position: relative;
+	}
 	#res-link {
 		color: white;
 		text-decoration: none;
 		font-size: 1.25rem;
 		position: relative;
+		// &:before {
+		// 	content: 'Coming soon...if you really want to look at a boring old resume.';
+		// 	border: 4px solid red;
+		// 	width: 500%;
+		// 	text-align: center;
+		// 	position: absolute;
+		// 	top: -250%;
+		// 	left: -250%;
+		// }
 		&:after {
 			content: '';
 			display: block;
@@ -38,9 +50,42 @@ footer {
 	}
 }
 
+#tooltip  {
+	color: white;
+	font-size: 1rem;
+	visibility: hidden;
+	width: 400px;
+	background: $text;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -200px;
+	opacity: 0;
+	transition: opacity 1s;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: $text transparent transparent transparent;
+	}
+}
+
+#resume-div:hover #tooltip {
+	visibility: visible;
+	opacity: 1;
+}
+
 // Tablet
 @media only screen and (max-width: 1030px) {
-
+	
 }
 
 // Phone

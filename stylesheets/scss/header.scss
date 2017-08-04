@@ -1,9 +1,10 @@
 
 header {
 	display: block;
-	.active-icon {
-		color: $blue;
-	}
+}
+
+.active-icon {
+	color: $blue;
 }
 
 #img-slider {
@@ -31,7 +32,10 @@ header {
 }
 // Tablet
 @media only screen and (max-width: 1030px) {
-
+	
+	.active-icon {
+		color: $text;
+	}
 }
 
 // Phone

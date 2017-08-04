@@ -1,34 +1,24 @@
 /*
 Error: Undefined variable: "$blue".
-        on line 5 of scss/header.scss
+        on line 7 of scss/header.scss
 
-1: 
 2: header {
 3: 	display: block;
-4: 	.active-icon {
-5: 		color: $blue;
-6: 	}
-7: }
-8: 
-9: #img-slider {
-10: 	height: 100vh;
+4: }
+5: 
+6: .active-icon {
+7: 	color: $blue;
+8: }
+9: 
+10: #img-slider {
+11: 	height: 100vh;
+12: 	width: 100%;
 
 Backtrace:
-scss/header.scss:5
+scss/header.scss:7
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/colinknebl/.rvm/gems/ruby-2.3.3/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
@@ -76,4 +66,4 @@ scss/header.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 5 of scss/header.scss\A \A 1: \A 2: header {\A 3: 	display: block;\A 4: 	.active-icon {\A 5: 		color: $blue;\A 6: 	}\A 7: }\A 8: \A 9: #img-slider {\A 10: 	height: 100vh;"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 7 of scss/header.scss\A \A 2: header {\A 3: 	display: block;\A 4: }\A 5: \A 6: .active-icon {\A 7: 	color: $blue;\A 8: }\A 9: \A 10: #img-slider {\A 11: 	height: 100vh;\A 12: 	width: 100%;"; }

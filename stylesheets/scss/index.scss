@@ -12,7 +12,8 @@ $bg2: #F7F7F7;
 a,
 p, 
 details, 
-li, 
+li,
+span, 
 h1, 
 h2, 
 h3, 
@@ -70,7 +71,7 @@ h6 {
 }
 
 .section-intro {
-	margin: 2rem .5rem;
+	padding: 1rem .5rem 3rem;
 	text-align: center;
 }
 
